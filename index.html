@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title id="name">Funny HTML Site</title>
-    <link rel="icon" type="image/x-icon" href="skull.png" id="favicon">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <h1>Funny HTML Site</h1>
-    <form name="Change_Tab" method="post">
-      <p>Tab Name</p>
-      <input type="text" id="tab_name" name="tab_name"><br>
-      <p>Tab Favicon</p>
-      <input type="file" id="tab_favicon" name="tab_favicon"><br><br>
-      <button onclick="return ChangeTab()">Change Tab</button>
-    </form><br>
-    <img id="current_tab_favicon" src="skull.png" width="50" height="50">
-    <p id="current_tab_name">Funny HTML Site</p>
-    <script>
-      function ChangeTab() {
-  let tab_name = document.forms["Change_Tab"]["tab_name"].value;
-  let tab_favicon = document.forms["Change_Tab"]["tab_favicon"].value;
-  document.getElementById("name").innerHTML = tab_name
-  document.getElementById("favicon").href = tab_favicon
-  document.getElementById("current_tab_name").innerHTML = tab_name
-  document.getElementById("cureent_tab_favicon").src = tab_favicon
-}
-    </script>
-  </body>
+<head>
+  <title id="name">Funny HTML Site</title>
+  <link rel="icon" type="image/x-icon" href="skull.png" id="favicon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <h1>Funny HTML Site</h1>
+  <form name="Change_Tab" method="post">
+    <p>Tab Name</p>
+    <input type="text" id="tab_name" name="tab_name"><br>
+    <p>Tab Favicon 🔗</p>
+    <input type="url" id="tab_favicon" name="tab_favicon"><br><br>
+   </form>
+  <button onclick="return ChangeTab()">Change Tab</button><br><br>
+      <img id="current_tab_favicon" src="skull.png" width="50" height="50">
+  <p id="current_tab_name">Funny HTML Site</p>
+  <script>
+    function ChangeTab() {
+      let tab_name = document.forms["Change_Tab"]["tab_name"].value;
+      let tab_favicon = document.forms["Change_Tab"]["tab_favicon"].value;
+      document.getElementById("name").innerHTML = tab_name
+      document.getElementById("favicon").href = tab_favicon
+      document.getElementById("current_tab_name").innerHTML = tab_name
+      document.getElementById("current_tab_favicon").src = tab_favicon
+    }
+  </script>
+</body>
 </html>
